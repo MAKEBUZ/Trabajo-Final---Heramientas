@@ -1,0 +1,40 @@
+Prueba ANOVA (básica) – Longitud promedio del tweet por sentimiento
+
+Objetivo: Comparar la longitud promedio del tweet entre categorías de sentimiento.
+Hipótesis:
+  H₀: Las medias son iguales.
+  H₁: Al menos una difiere.
+Supuestos: normalidad y homogeneidad; si no se cumplen, usar Kruskal–Wallis.
+
+Estadísticos por grupo (longitud de texto):
+  target = 0 (negativo): n = 789522, media = 74.208444, var = 1346.162753
+  target = 2 (neutral): n = 0, media = 0.000000, var = 0.000000
+  target = 4 (positivo): n = 791363, media = 73.422498, var = 1334.767329
+
+Nota: Categorías sin datos (n = 0) excluidas en inferencia: neutral
+
+Media global: 73.815013
+ANOVA: F(1, 1580883) = 182.126020
+p-value (SciPy): 0.00000000000000000000000000000000000000001673175638 (~1.67318e-41)
+
+Comparación descriptiva de medias:
+  negativo vs positivo: Δ media = 0.785946 caracteres (1.070%)
+
+Interpretación:
+- Si p << 0.05, se rechaza H₀ y se concluye H₁ (al menos una difiere).
+- La diferencia observada debe evaluarse por su relevancia práctica además de la significancia.
+
+Pruebas adicionales y gráficos:
+  Normalidad Shapiro negativo: W = 0.942455, p = 2.29214e-40
+  Normalidad D'Agostino negativo: K2 = 22649.911057, p = 0
+  Normalidad Shapiro positivo: W = 0.787517, p = 9.73939e-63
+  Normalidad D'Agostino positivo: K2 = 112930.475428, p = 0
+  Homogeneidad (Levene): estadístico = 207.596869, p = 4.62554e-47
+  Kruskal–Wallis: H = 201.208347, p = 1.13801e-45
+  Figuras guardadas:
+    C:\Users\makab\Desktop\TRABAJO FINAL\ANOVA\AnovaTweets2_hist_0.png
+    C:\Users\makab\Desktop\TRABAJO FINAL\ANOVA\AnovaTweets2_hist_4.png
+    C:\Users\makab\Desktop\TRABAJO FINAL\ANOVA\AnovaTweets2_boxplot.png
+    C:\Users\makab\Desktop\TRABAJO FINAL\ANOVA\AnovaTweets2_qq_0.png
+    C:\Users\makab\Desktop\TRABAJO FINAL\ANOVA\AnovaTweets2_qq_4.png
+    C:\Users\makab\Desktop\TRABAJO FINAL\ANOVA\AnovaTweets2_varianzas.png
