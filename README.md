@@ -15,3 +15,7 @@ https://docs.google.com/document/d/1SWzV-zk3BxOYK1CGMkJs2r1B6oFAPguZgma-QoIiQxA/
 https://etl-indol.vercel.app/
 
 https://github.com/danrtx/ETL
+
+Link del pibx almacenado en Google Drive
+
+https://drive.google.com/file/d/1Q1H72yPiNLIkx-Vh9zY5qODW7Lr6KcS1/view?usp=drive_link
